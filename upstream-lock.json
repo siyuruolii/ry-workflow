@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "retrievedOn": "2026-11-25",
+  "sources": [
+    {
+      "id": "windflow",
+      "repository": "https://github.com/YinFengWindy/windflow",
+      "commit": "399016835de9d1f8d8188118169c937b908f69bf",
+      "license": "MIT",
+      "role": "Primary workflow architecture: coordinator routing, three human gates, verification/review separation, issue overlap check, Windows-safe worktree cleanup, execution records."
+    },
+    {
+      "id": "mattpocock-skills",
+      "repository": "https://github.com/mattpocock/skills",
+      "commit": "d65391149dbb5fe76478e76fa8d5122b2aa5a70e",
+      "license": "MIT",
+      "role": "Inline grill-with-docs & domain modeling, background primary-source research, disciplined bug diagnosis loop, vertical-slice TDD, Standards x Spec two-axis review + Fowler smells, PR merge-danger structure, handoff, retro, writing-for-agents, deep modules."
+    },
+    {
+      "id": "pstack",
+      "repository": "https://github.com/cursor/plugins",
+      "subpath": "pstack",
+      "commit": "41e400932eca14f289e7db717a70455256b6d388",
+      "license": "MIT",
+      "role": "Task playbooks, steering engineering principles, independent design arena/architect, surface-aware real verification (prove-it-works / create-verification-skill), swarm coordination, mistake-to-guardrail escalation (correct), unslop & technical writing, recall & reflect."
+    },
+    {
+      "id": "nagi-skills",
+      "repository": "https://github.com/nagi-studio/skills",
+      "commit": "4705e4e87f87742652fa95fe83fef3c8b4bdfe2c",
+      "license": "MIT",
+      "role": "Maintainable tech-stack selection with operator duties, junk-test criteria (prove-it), user-invoked UI subtraction checklist (de-slop), repo spring-cleaning & 5,000-token hook (tidy), local skill linking helper."
+    }
+  ],
+  "integrations": {
+    "ry-flow": ["windflow/windflow", "mattpocock-skills/implement-spec", "mattpocock-skills/wayfinder", "pstack/poteto-mode", "pstack/swarm", "pstack/08-principles", "pstack/playbooks/autopilot-stack", "pstack/playbooks/pause-safely", "pstack/playbooks/prototype", "pstack/playbooks/multi-phase-plan", "pstack/playbooks/authoring-a-skill", "pstack/advisor", "pstack/show-me-your-work"],
+    "ry-grill": ["windflow/wf-grill", "mattpocock-skills/grilling", "mattpocock-skills/grill-with-docs", "mattpocock-skills/domain-modeling", "pstack/in-your-own-words", "pstack/sharpen", "pstack/reframe"],
+    "ry-investigate": ["windflow/wf-investigate", "pstack/how", "pstack/why"],
+    "ry-research": ["mattpocock-skills/research"],
+    "ry-design": ["windflow/wf-design", "pstack/arena", "pstack/architect", "pstack/advisor", "nagi-skills/architect", "mattpocock-skills/codebase-design"],
+    "ry-plan": ["windflow/wf-plan", "mattpocock-skills/wayfinder", "mattpocock-skills/to-spec", "mattpocock-skills/to-tickets"],
+    "ry-implement": ["windflow/wf-implement", "mattpocock-skills/tdd", "mattpocock-skills/implement-spec", "pstack/tdd"],
+    "ry-debug": ["mattpocock-skills/diagnosing-bugs", "pstack/principle-attack-the-premise", "pstack/principle-fix-root-causes"],
+    "ry-verify": ["windflow/wf-verify", "pstack/principle-prove-it-works", "pstack/create-verification-skill", "nagi-skills/prove-it"],
+    "ry-verify-create": ["pstack/create-verification-skill"],
+    "ry-verify-maintain": ["pstack/maintain-verification-skill"],
+    "ry-eval": ["pstack/playbooks/hillclimb", "pstack/playbooks/eval", "pstack/benchmark-checklist", "pstack/principle-explain-the-number"],
+    "ry-review": ["windflow/wf-review", "mattpocock-skills/code-review", "pstack/blast-radius", "pstack/interrogate", "pstack/advisor"],
+    "ry-deslop": ["nagi-skills/de-slop"],
+    "ry-ship": ["windflow/wf-ship", "mattpocock-skills/pr"],
+    "ry-write": ["windflow/wf-write", "pstack/unslop", "pstack/technical-writing", "pstack/playbooks/authoring-a-skill", "mattpocock-skills/writing-for-agents"],
+    "ry-tidy": ["nagi-skills/tidy", "mattpocock-skills/improve-codebase-architecture", "pstack/no-comments"],
+    "ry-correct": ["pstack/correct", "nagi-skills/prove-it"],
+    "ry-handoff": ["mattpocock-skills/handoff", "pstack/recall", "pstack/ketchup"],
+    "ry-retro": ["mattpocock-skills/retro", "pstack/reflect"]
+  }
+}

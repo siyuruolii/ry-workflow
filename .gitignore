@@ -1,0 +1,24 @@
+# OS & editor artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Logs, temp & archives
+*.log
+*.zip
+tmp/
+
+# Secrets & local env
+.env
+.env.*
+
+# Dependency & runtime caches
+node_modules/
+__pycache__/
+.venv/
+
+# Workflow ephemeral / session-local artifacts
+.scratch/
+handoff/
