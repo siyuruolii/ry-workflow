@@ -88,4 +88,4 @@ Use for novel UX, unfamiliar SDKs, or contested forks where running code settles
 
 1. Draft/edit via `ry-write` (Section 3: *Writing for Agents* — tight descriptions, true branch-only progressive disclosure, positive checkable criteria).
 2. Trial the skill on a realistic task prompt to catch trigger gaps or over-ceremony.
-3. Run repo validation (`.\scripts\validate-skills.ps1`) to verify frontmatter, description budget, size limits, and links before shipping.
+3. Verify frontmatter, naming, description budget, size limits, and relative links (and run the repo's skill validator if one exists) before shipping.

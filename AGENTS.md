@@ -17,12 +17,12 @@ Maintenance rules and non-obvious design invariants for editing `ry-workflow` it
 
 ## Sync & Validation Rules
 
-| Rule | Enforced by |
-| --- | --- |
-| Valid YAML frontmatter, folder == `name`, `metadata.collection: ry-workflow`, `SKILL.md <= 20 KB` | `.\scripts\validate-skills.ps1` |
-| Every skill `description <= 200` chars and total suite descriptions `<= 3,500` chars | `.\scripts\validate-skills.ps1` |
-| Zero broken relative links in skills, `references/`, and `README.md` | `.\scripts\validate-skills.ps1` |
-| Skill set stays in sync across `skills/`, `README.md`, `upstream-lock.json`, and `skills/ry-flow/SKILL.md` | `.\scripts\validate-skills.ps1` |
-| Windows worktree cleanup removes reparse points/junctions before `git worktree remove` | Manual check (`skills/ry-ship/references/worktree-cleanup.md`) |
+Before committing any added, renamed, merged, or edited skill or doc, verify:
 
-Always run `.\scripts\validate-skills.ps1` after adding, renaming, merging, or editing any skill or doc.
+| Rule | Check |
+| --- | --- |
+| Valid YAML frontmatter, folder == `name`, `metadata.collection: ry-workflow`, `SKILL.md <= 20 KB` | Inspect every edited `SKILL.md` |
+| Every skill `description <= 200` chars and total suite descriptions `<= 3,500` chars | Measure frontmatter descriptions |
+| Zero broken relative links in skills, `references/`, `README.md`, and `README.zh-CN.md` | Check all relative markdown links |
+| Skill set stays in sync across `skills/`, `README.md`, `README.zh-CN.md`, `upstream-lock.json`, and `skills/ry-flow/SKILL.md` | Cross-check all 5 locations |
+| Windows worktree cleanup removes reparse points/junctions before `git worktree remove` | Manual check (`skills/ry-ship/references/worktree-cleanup.md`) |

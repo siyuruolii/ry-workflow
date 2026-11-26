@@ -37,7 +37,7 @@ When the reader is an AI agent rather than a human:
 - **Guard always-loaded context:** keep `SKILL.md` descriptions tight (~120–180 chars of trigger signal, not procedure summaries). Push **only branch-specific or infrequent procedures** into `references/` behind sharp pointers (*what it contains* and *when to read it*) — never split a file that every invocation must read unconditionally.
 - **Do not duplicate the environment:** skip directory trees, `package.json` scripts, or `--help` output that an agent can read directly; capture only unwritten conventions, traps, and navigation pointers.
 - **Checkable completion & positive framing:** end procedures on concrete, observable completion criteria; state what *to do* rather than relying on bare prohibitions, and cut no-op advice the model already obeys by default.
-- **Test skills like code:** when authoring or editing a `SKILL.md`, trial it against a realistic task prompt to catch trigger gaps or instruction ambiguity, and run any repo skill validator (e.g., `.\scripts\validate-skills.ps1`) before finishing.
+- **Test skills like code:** when authoring or editing a `SKILL.md`, trial it against a realistic task prompt to catch trigger gaps or instruction ambiguity, and verify frontmatter, links, and any repo skill validator before finishing.
 
 ## 4. Respect Evidence & Scope
 

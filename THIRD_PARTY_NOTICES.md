@@ -22,6 +22,6 @@
 4. **nagi-studio/skills**
    - Repository: https://github.com/nagi-studio/skills
    - License: MIT
-   - Adapted ideas: Maintainable tech-stack comparison with operator responsibility callouts (`architect`), 3 junk-test patterns (`prove-it`), user-invoked UI subtraction checklist with `DESIGN.md` (`de-slop`), repo spring-cleaning with 5,000-token pre-commit hook and `AGENTS.md` slimming (`tidy`), and local skill-linking helper (`scripts/link-skills.sh`).
+   - Adapted ideas: Maintainable tech-stack comparison with operator responsibility callouts (`architect`), 3 junk-test patterns (`prove-it`), user-invoked UI subtraction checklist with `DESIGN.md` (`de-slop`), and repo spring-cleaning with 5,000-token pre-commit hook and `AGENTS.md` slimming (`tidy`).
 
 Pinned commit hashes retrieved during design are recorded in [upstream-lock.json](upstream-lock.json).

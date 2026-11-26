@@ -29,7 +29,7 @@
       "repository": "https://github.com/nagi-studio/skills",
       "commit": "4705e4e87f87742652fa95fe83fef3c8b4bdfe2c",
       "license": "MIT",
-      "role": "Maintainable tech-stack selection with operator duties, junk-test criteria (prove-it), user-invoked UI subtraction checklist (de-slop), repo spring-cleaning & 5,000-token hook (tidy), local skill linking helper."
+      "role": "Maintainable tech-stack selection with operator duties, junk-test criteria (prove-it), user-invoked UI subtraction checklist (de-slop), and repo spring-cleaning & 5,000-token hook (tidy)."
     }
   ],
   "integrations": {
